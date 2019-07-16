@@ -52,6 +52,16 @@
       [...document.getElementsByClassName("demo")].forEach(
         e => (e.style.border = "1px solid orange")
       );
+
+      [...document.getElementsByTagName("article")].forEach(
+        e => (e.style.border = "1px solid blue")
+      );
+
+      document.querySelector("#demo-query").style.border = "1px solid grey";
+
+      [...document.querySelectorAll(".demo-query-all")].forEach(
+        e => (e.style.border = "1px solid green")
+      );
     </script>
   </body>
 </html>

@@ -39,5 +39,26 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+    ul.firstElementChild.style.background = "#f00";
+
+    [...document.getElementsByTagName("li")].forEach(
+      e => (e.style.background = "orange")
+    );
+
+    document.getElementsByTagName("li")[
+      document.getElementsByTagName("li").length - 1
+    ].style.color = "pink";
+
+    document.getElementsByTagName("li")[
+      Math.floor(document.getElementsByTagName("li").length / 2)
+    ];
+
+    document.getElementsByTagName("li")[
+      Math.floor(document.getElementsByTagName("li").length / 2)
+    ].nextElementSibling.style.background = "red";
+
+    document.getElementsByTagName("li")[
+      Math.floor(document.getElementsByTagName("li").length / 2)
+    ].previousElementSibling.style.background = "hotpink";
   </script>
 </html>
