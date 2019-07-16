@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+button {
+  background: rgb(221, 176, 176);
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+}
