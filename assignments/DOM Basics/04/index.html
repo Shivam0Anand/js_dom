@@ -12,5 +12,23 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+
+    <script>
+      document.body.style.fontFamily = "Arial, sans-serif";
+
+      var me = {
+        Nickname: "shivam",
+        favorites: "chicken",
+        hometown: "Patna"
+      };
+
+      var list = document.getElementsByTagName("li");
+
+      var i = 0;
+      for (var key in me) {
+        list[i].classList.add("list");
+        list[i++].innerText = `${key} : ${me[key]}`;
+      }
+    </script>
   </body>
 </html>
