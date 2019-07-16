@@ -11,11 +11,17 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
-      var p = document.createElement("p");
-      p.innerHTML = "Hello, Javascript";
+      let p = document.createElement('p');
+      p.innerText = "Hello, Javascript";
       p.innerHTML = "I love <strong>Javascript</strong>";
-      var ul = document.createElement("ul");
+      let ul = document.createElement('ul');
       ul.innerHTML = "<li>Buy groceries</li>\n<li>Feed the cat</li>\n<li>Do laundry</li>";
+      document.body.appendChild(p);
+      document.body.appendChild(ul);
+      // ul.removeChild(ul.firstChild);
+      let li = document.createElement('li');
+      li.innerText = "Buy groceries again";
+      ul.appendChild(li);
     </script>
   </body>
 </html>
